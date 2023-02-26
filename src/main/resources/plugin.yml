@@ -1,0 +1,11 @@
+name: VanillaSpawnTeleport
+version: '${project.version}'
+main: net.daechler.vanillaspawnteleport.VanillaSpawnTeleport
+api-version: 1.19
+authors: [ Daechler ]
+description: Teleports a player to the vanilla spawn with a warm-up timer.
+commands:
+  spawn:
+    description: Permission to use /spawn
+    usage: /spawn
+    permission: vanillaspawnteleport.use
