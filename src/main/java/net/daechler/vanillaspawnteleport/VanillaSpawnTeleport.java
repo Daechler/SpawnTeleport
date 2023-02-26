@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class VanillaSpawnTeleport extends JavaPlugin implements CommandExecutor {
-    private static final int COUNTDOWN_SECONDS = 10;
+    private static final int COUNTDOWN_SECONDS = 10; // warm-up timer in seconds
 
     @Override
     public void onEnable() {
@@ -61,7 +61,7 @@ public class VanillaSpawnTeleport extends JavaPlugin implements CommandExecutor 
                 return;
             }
 
-            String title = String.format("Teleportation in §a%d§f...", remainingSeconds);
+            String title = String.format("Teleportation in §a%d§f...", remainingSeconds); // title countdown
             player.sendTitle(title, "", 0, 20, 0);
 
             remainingSeconds--;
